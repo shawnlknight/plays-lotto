@@ -5,12 +5,13 @@ var gulp        = require('gulp'),
     less        = require('gulp-less'),
     prefix      = require('gulp-autoprefixer'),
     minifyCSS   = require('gulp-clean-css'),
+    util        = require('gulp-util'),
     PORT        = 7777;
 
 //-- build css and js
 gulp.task('css', function() {
   return gulp.src('app/app.less')
-    .pipe(less())
+    .pipe(less()).on('error', util.log)
     .pipe(prefix({
       cascade: true
     }))

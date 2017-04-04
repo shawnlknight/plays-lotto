@@ -2,7 +2,6 @@
 //-- style for range input
 @track-color: #777;
 @thumb-color: #407DA1;
-@texture: url('../images/cross-scratches.png');
 
 @thumb-radius: 8px;
 @thumb-height: 30px;
@@ -43,7 +42,6 @@
 	border-radius: @thumb-radius;
 	background: @thumb-color;
 	cursor: pointer;
-	background-image: @texture;
 }
 
 input[type=range] {
@@ -59,11 +57,10 @@ input[type=range] {
 		.track();
 		.shadow(@track-shadow-size,@track-shadow-blur,@track-shadow-color);
 		background: @track-color;
-		background-image: @texture;
 		border-radius: 0px;
 		border: @track-border-width solid @track-border-color;
 	}
-  
+
 	&::-webkit-slider-thumb {
 		.thumb();
 		-webkit-appearance: none;
@@ -78,7 +75,6 @@ input[type=range] {
 		.track();
 		.shadow(@track-shadow-size,@track-shadow-blur,@track-shadow-color);
 		background: @track-color;
-		background-image: @texture;
 		border-radius: @track-radius;
 		border: @track-border-width solid @track-border-color;
 	}
@@ -87,7 +83,7 @@ input[type=range] {
 	}
 
 	&::-ms-track {
-		.track(); 
+		.track();
 		background: transparent;
 		border-color: transparent;
 		border-width: @thumb-width 0;
@@ -96,14 +92,12 @@ input[type=range] {
 
 	&::-ms-fill-lower {
 		background: darken(@track-color, @contrast);
-		background-image: @texture;
 		border: @track-border-width solid @track-border-color;
 		border-radius: @track-radius*2;
 		.shadow(@track-shadow-size,@track-shadow-blur,@track-shadow-color);
 	}
 	&::-ms-fill-upper {
 		background: @track-color;
-		background-image: @texture;
 		border: @track-border-width solid @track-border-color;
 		border-radius: @track-radius*2;
 		.shadow(@track-shadow-size,@track-shadow-blur,@track-shadow-color);

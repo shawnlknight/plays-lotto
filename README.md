@@ -1,4 +1,4 @@
-# Plays Lotto
+# Planning Lotto
 
 This app allows a software development team to play [Planning Poker](http://en.wikipedia.org/wiki/Planning_poker)
 
@@ -7,9 +7,9 @@ This app allows a software development team to play [Planning Poker](http://en.w
 
 This app is designed to allow a software development team to play "Planning Poker", a game used to estimate how much time different development tasks will take. To learn more about Planning Poker, check out the article on [wikipedia](http://en.wikipedia.org/wiki/Planning_poker). The app will run in your browser and allow your team to silently vote on tasks, then reveal the results.
 
-## Resigned 
+## Redesigned
 
-This app has had the UI updated and the back end re-factored. This app is based off of [Jenni's Planning Poker](https://github.com/jenjaina/planning-poker).
+This app has had the UI updated from [Pete's Play's Lotto version](https://github.com/peteplays/plays-lotto). Pete also updated the UI and backend based off of [Jenni's Planning Poker](https://github.com/jenjaina/planning-poker).
 
 
 ## How to use the app

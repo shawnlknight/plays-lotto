@@ -27,16 +27,16 @@
     <div class="col-sm-4">
       <div class="center-el">
         <div class="btn-group nav-leader-toggle-power">
-          <button class="btn btn-primary" ng-model="leaderSelected" ng-hide="!params.leader && params.leaderChosen" ng-click="setLeader(data.name)" uib-btn-radio="'leader'" uncheckable>I'm the leader!</button>
-          <button class="btn btn-primary" ng-model="leaderSelected" ng-hide="!params.leader && params.leaderChosen" ng-click="resetLeader()" uib-btn-radio="'giveUpPower'" uncheckable>Give up your power</button>
+          <button class="btn btn-info" ng-model="leaderSelected" ng-hide="!params.leader && params.leaderChosen" ng-click="setLeader(data.name)" uib-btn-radio="'leader'" uncheckable>I'm the leader!</button>
+          <button class="btn btn-info" ng-model="leaderSelected" ng-hide="!params.leader && params.leaderChosen" ng-click="resetLeader()" uib-btn-radio="'giveUpPower'" uncheckable>Give up your power</button>
         </div>
       </div>
     </div>
     <div class="col-sm-offset-3 col-sm-5">
       <div class="center-el">
         <div class="btn-group nav-people-list" uib-dropdown>
-          <button class="btn" ng-class="params.leader ? 'btn-success' : 'btn-primary'" ng-click="addUser(data.name);"><i class="fa fa-refresh"></i></button>
-          <button type="button" class="btn" ng-class="params.leader ? 'btn-success' : 'btn-primary'" uib-dropdown-toggle>
+          <button class="btn" ng-class="params.leader ? 'btn-success' : 'btn-info'" ng-click="addUser(data.name);"><i class="fa fa-refresh"></i></button>
+          <button type="button" class="btn" ng-class="params.leader ? 'btn-success' : 'btn-info'" uib-dropdown-toggle>
             <span ng-show="params.leader">Leader: </span>
             {{currentUsers.length}} People Estimating
             <span class="caret"></span>
